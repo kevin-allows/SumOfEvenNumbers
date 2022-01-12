@@ -10,6 +10,9 @@ public class SumOfEvenNumbers {
 
     public static int sum(int[] array){
         int sumOfArray = 0;
+        if (array==null){
+            return 0;
+        }
         for (int i=0; i<array.length; i++){
             int even = array[i]%2;
             if (even == 0) {
